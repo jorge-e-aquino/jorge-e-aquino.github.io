@@ -1,19 +1,28 @@
-body {
+* {
     font-family: 'Oswald', sans-serif;
 }
 
+body {
+    touch-action: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 42.4%;
+}
+
 h1 {
-    text-align: center;
     font-size: 600%;
-    font-weight: 100;
 }
 
 h1 a {
-    margin-left: 40.5%;
+    margin-left: 46.1%;
 }
 
-h1 a img{
-    width: 80%;
+h1 img{
+    width: 73%;
 }
 
 a:link {
@@ -26,36 +35,29 @@ a:visited {
 
 nav {
     display: flex;
-    padding-left: 10%;
-    padding-bottom: 2%;
-    justify-self: center;
     align-items: center;
+    justify-self: center;
+    padding-left: 5.8%;
+    padding-bottom: 3%;
 }
 
 nav a {
     float: left;
+    text-justify: center;
     font-size: 100%;
     color: black;
-    padding: 14px 16px;
     text-decoration: none;
-    text-justify: center;
+    padding: 14px 11px;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .container img {
     width: 951px;
-    height: 600px;
-    object-fit: cover;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 42.4%;
+    height: 541px;
+    object-fit: contain;
 }
