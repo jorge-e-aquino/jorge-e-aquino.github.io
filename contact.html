@@ -1,28 +1,82 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+    <style>
+        input, textarea { 
+        outline: none;
+        }
+        form {
+        width: 1200px;
+        }
+        .form-inner {
+        padding: 40px;
+        }
+        .form-inner input,
+        .form-inner textarea {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 20px;
+        background: #303030;
+        font-size: 20px;
+        color: #fff
+        }
+        .form-inner textarea {
+        resize: none;
+        }
+        button {
+        width: 883px;
+        height: 70px;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border: none;
+        background: #3b3b3bbe; 
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        }
+        button:hover {
+        background: #303030;
+        } 
+        @media (min-width: 568px) {
+        form {
+        width: 60%;
+        }
+        }
+      </style>
+  </head>
 
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">WORK</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="about.html">ABOUT</a>
-        </nav>
-        <h1>
-            <a href="index.html">
-                <img src="images/logo.png"/>
-            </a>
-        </h1>
+      <nav>
+        <a href="index.html">WORK</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+      </nav>
+      <h1>
+        <a href="index.html">
+          <img src="images/logo.png" />
+        </a>
+      </h1>
     </header>
-    <div>
-        
-    </div>
-</body>
-
-
+    <section>
+        <form action="/" class="decor">
+            <div class="form-inner">
+              <input type="text" placeholder="Your Name">
+              <input type="email" placeholder="Email">
+              <textarea placeholder="Message..." rows="5"></textarea>
+              <button type="submit" href="/">Submit</button>
+            </div>
+          </form>
+    </section>
+  </body>
 </html>
