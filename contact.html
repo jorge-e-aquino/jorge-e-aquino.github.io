@@ -1,83 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- ****** favicons ****** -->
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href=/images/favicons/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href=/images/favicons/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href=/images/favicons/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href=/images/favicons/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href=/images/favicons/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href=" /> <link
+    rel=" apple-touch-icon" sizes="144x144" href=/images/favicons/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href=/images/favicons/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href=/images/favicons/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href=/images/favicons/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href=/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href=/images/favicons/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href=/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href=/images/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content=/images/favicons/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- ****** favicons ****** -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet" />
     <title>Contact</title>
     <style>
-        input, textarea { 
-        outline: none;
+        input,
+        textarea {
+            outline: none;
         }
+
         form {
-        width: 1200px;
+            width: 1200px;
         }
+
         .form-inner {
-        padding: 40px;
+            padding: 40px;
         }
+
         .form-inner input,
         .form-inner textarea {
-        display: block;
-        width: 100%;
-        padding: 20px;
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 20px;
-        background: #303030;
-        font-size: 20px;
-        color: #fff
+            display: block;
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 20px;
+            background: #303030;
+            font-size: 20px;
+            color: #fff
         }
-        .form-inner textarea {
-        resize: none;
-        }
-        button {
-        width: 883px;
-        height: 70px;
-        padding: 10px;
-        margin-top: 20px;
-        border-radius: 20px;
-        border: none;
-        background: #3b3b3bbe; 
-        font-size: 20px;
-        font-weight: 400;
-        color: #fff;
-        }
-        button:hover {
-        background: #303030;
-        } 
-        @media (min-width: 568px) {
-        form {
-        width: 60%;
-        }
-        }
-      </style>
-  </head>
 
-  <body>
+        .form-inner textarea {
+            resize: none;
+        }
+
+        button {
+            width: 883px;
+            height: 70px;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 20px;
+            border: none;
+            background: #3b3b3bbe;
+            font-size: 20px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        button:hover {
+            background: #303030;
+        }
+
+        @media (min-width: 568px) {
+            form {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
     <header>
-      <nav>
-        <a href="index.html">WORK</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="about.html">ABOUT</a>
-      </nav>
-      <h1>
-        <a href="index.html">
-          <img src="images/logo.png" />
-        </a>
-      </h1>
+        <nav>
+            <a href="index.html">WORK</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+        </nav>
+        <h1>
+            <a href="index.html">
+                <img src="images/logo.png" />
+            </a>
+        </h1>
     </header>
     <section>
         <form name="contact" data-netlify="true" data-netlify-recaptcha="true" class="decor">
             <div class="form-inner">
-              <label>Your Name: <input name="name" type="text" placeholder="Your Name"></label>
-              <label>Your email: <input name="email" type="email" placeholder="Email"></label>
-              <label>Message: <textarea name="message" placeholder="Message..." rows="5"></textarea></label>
-              <div data-netlify-recaptcha="true" class="captcha"></div>
-              <button type="submit">Submit</button>
+                <label>Your Name: <input name="name" type="text" placeholder="Your Name"></label>
+                <label>Your email: <input name="email" type="email" placeholder="Email"></label>
+                <label>Message: <textarea name="message" placeholder="Message..." rows="5"></textarea></label>
+                <div data-netlify-recaptcha="true" class="captcha"></div>
+                <button type="submit">Submit</button>
             </div>
         </form>
     </section>
-  </body>
+</body>
+
 </html>
