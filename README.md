@@ -11,3 +11,5 @@ Create a web site consisting of at least 4 pages. The site should represent aspe
 There are many different design strategies that you can employ for your site. Here is a link to set of 50 different portfolio examples to give you ideas: https://collegeinfogeek.com/personal-website-examples/. (Links to an external site.)
 
 You will submit a draft of the site for preliminary grading on September 11, but you should continue to refine and add to the site throughout the semester, because you will be asked submit the improved version by Dec 5. The final version will replace the preliminary grade.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/28f9ec8e-5647-4e5a-8ee1-a2601183e6d4/deploy-status)](https://app.netlify.com/sites/aquinodesign/deploys)
