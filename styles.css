@@ -24,18 +24,20 @@ header {
     margin-top: -10px;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 42.4%;
+    width: 1100px;
+    height: 305px;
 }
 
-h1 {
+header h1 {
     font-size: 600%;
+    width: 828.89px;
 }
 
-h1 a {
+header h1 a {
     margin-left: 46.1%;
 }
 
-h1 img {
+header h1 img {
     width: 73%;
 }
 
@@ -56,7 +58,6 @@ nav {
 }
 
 nav a {
-    float: left;
     text-justify: center;
     font-size: 100%;
     color: black;
