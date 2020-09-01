@@ -152,3 +152,7 @@ ul li a svg {
     height: 48px;
     width: 48px;
 }
+
+label {
+    opacity: 0;
+}
