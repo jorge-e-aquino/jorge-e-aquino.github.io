@@ -158,5 +158,6 @@ label {
 }
 
 .captcha {
-    justify-self: center;
+    justify-items: center;
+    justify-content: center;
 }
