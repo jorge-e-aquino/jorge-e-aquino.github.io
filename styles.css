@@ -132,13 +132,6 @@ section img {
     transition: background 0.2s ease, color 0.2s ease;
 }
 
-svg {
-    fill: rgb(2, 42, 85);
-    height: 48px;
-    opacity: 1;
-    width: 48px;
-}
-
 ul {
     padding-inline-start: 0px;
     justify-items: space-around;
@@ -149,3 +142,13 @@ ul li {
     display: inline;
 }
 
+ul li a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul li a svg {
+    fill: rgb(2, 42, 85);
+    height: 48px;
+    width: 48px;
+}
