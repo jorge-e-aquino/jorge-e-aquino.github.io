@@ -37,6 +37,14 @@ header h1 a {
     margin-left: 46.1%;
 }
 
+header nav a:hover {
+	opacity: 50%;
+}
+
+header h1 a:hover {
+	opacity: 65%;
+}
+
 header h1 img {
     width: 73%;
 }
