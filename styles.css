@@ -2,12 +2,26 @@
     font-family: 'Oswald', sans-serif;
 }
 
+html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
 body {
     touch-action: none;
+    position: relative;
+    animation: fadeInAnimation ease-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInAnimation {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
 }
 
 header {
     display: flex;
+    margin-top: -10px;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 42.4%;
@@ -21,7 +35,7 @@ h1 a {
     margin-left: 46.1%;
 }
 
-h1 img{
+h1 img {
     width: 73%;
 }
 
@@ -52,12 +66,86 @@ nav a {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-.container img {
-    width: 951px;
+.container a {
+    background: #585858;
+    width: 957px;
     height: 541px;
-    object-fit: contain;
 }
+
+.container a img {
+    width: 957px;
+    height: 541px;
+    object-fit: cover;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.container a:hover img {
+	opacity: .5;
+}
+
+.page div {
+    text-align: center;
+}
+
+section {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 10% 5% 10%;
+    align-items: center;
+    align-self: center;
+}
+
+section p {
+    font-size: 20px;
+    width: 1200px;
+    text-align: center;
+    color: #3b3b3bbe;
+    margin-top: -10px;
+}
+
+section img {
+    padding: 1% 50px 3% 50px;
+    width: 1200px;
+    object-fit: fill;
+}
+
+.social {
+    margin-top: 30px;
+    text-align: center;
+    text-size-adjust: 100%;
+}
+
+.social a {
+    display: flex;
+    float: left;
+    text-align: center;
+}
+
+.link-transition a {
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+svg {
+    fill: rgb(2, 42, 85);
+    height: 48px;
+    opacity: 1;
+    width: 48px;
+}
+
+ul {
+    padding-inline-start: 0px;
+    justify-items: space-around;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
