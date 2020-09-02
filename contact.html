@@ -36,7 +36,9 @@
         }
 
         .form-inner {
-            padding: 44px;
+            padding: 2% 4% 2% 4%;
+            display: flex;
+            flex-direction: column;
         }
 
         .form-inner input,
@@ -83,23 +85,21 @@
 
 <body>
     <header>
+        <a href="index.html" id="logo">
+            <img src="images/logo.png" />
+        </a>
         <nav>
             <a href="index.html">WORK</a>
             <a href="contact.html">CONTACT</a>
             <a href="about.html">ABOUT</a>
         </nav>
-        <h1>
-            <a href="index.html">
-                <img src="images/logo.png"/>
-            </a>
-        </h1>
     </header>
-    <section style="margin-top: -60px;">
-        <form name="contact" data-netlify="true" data-netlify-recaptcha="true" class="decor">
+    <section style="margin-top: -3%">
+        <form name="contact" data-netlify="true" data-netlify-recaptcha="true" style="margin-top: 2%;">
             <div class="form-inner">
-                <label>Your Name: <input name="name" type="text" placeholder="Your Name"></label>
-                <label>Your email: <input name="email" type="email" placeholder="Email" required></label>
-                <label>Message: <textarea name="message" placeholder="Message..." rows="5" required></textarea></label>
+                <label><input name="name" type="text" placeholder="Your Name"></label>
+                <label><input name="email" type="email" placeholder="Email" required></label>
+                <label><textarea name="message" placeholder="Message..." rows="4" required></textarea></label>
                 <div data-netlify-recaptcha="true" class="captcha" style="margin-top: 20px;"></div>
                 <button type="submit">Submit</button>
             </div>
