@@ -5,13 +5,9 @@
 html {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
+    scroll-behavior: smooth;
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    vertical-align: middle;
-    margin-top: 2%;
+    padding-top: 2%;
 }
 
 body {
@@ -83,6 +79,7 @@ nav a {
 }
 
 .container {
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -106,7 +103,7 @@ nav a {
 }
 
 .article img {
-    margin-bottom: 3%;
+    margin: 3% 0% 1% 0%;
 }
 
 .container img:hover {
@@ -119,13 +116,15 @@ nav a {
     box-shadow: none;
 }
 
-#resume img {
+#resume {
+    max-width: 920px;
+    transition: .2s ease-in-out;
     object-fit: cover;
     position: -webkit-sticky;
 }
 
 #resume:hover {
-    opacity: .9;
+    opacity: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -137,7 +136,12 @@ nav a {
     background-image: url(/images/baugasm-container.png);
 } */
 
-.page img, p {
+.page p {
+    margin: 3% 0% 0% 0%;
+}
+
+.page img,
+p {
     max-width: 80%;
     border-radius: 2vh;
     font-size: 20px;
@@ -148,6 +152,41 @@ nav a {
 
 .page div {
     text-align: center;
+}
+
+#long {
+    flex: 1 0 auto;
+}
+
+.footer {
+    position: -webkit-sticky;
+    margin-top: 2%;
+    flex-shrink: 0;
+    transition: .2s ease-in-out;
+    height: 50px;
+    width: 100%;
+}
+
+.footer a {
+    position: sticky;
+    pointer-events: all;
+}
+
+.footer a div:hover {
+    opacity: 0.8;
+    box-shadow: none;
+}
+
+#footer-content {
+    transition: .2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background: gainsboro;
+}
+
+#footer-content p {
+    text-align: center;
+    max-width: 100%;
 }
 
 section {
@@ -201,25 +240,6 @@ ul li a svg {
     fill: rgb(2, 42, 85);
     height: 48px;
     width: 48px;
-}
-
-label {
-    margin: 1.5% 0%;
-    width: 95%;
-}
-
-.captcha {
-    padding-left: 280px;
-}
-
-form {
-    width: 100%;
-    padding-top: 0%;
-}
-
-input,
-textarea {
-    width: 100%;
 }
 
 #link {
