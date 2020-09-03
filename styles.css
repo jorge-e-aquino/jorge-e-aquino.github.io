@@ -17,7 +17,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     animation: fadeInAnimation ease-in;
     animation-duration: 0.5s;
@@ -85,7 +85,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0% 1% 1% 1%;
+    margin: -1% 1% 1% 1%;
 }
 
 .container a {
@@ -114,8 +114,7 @@ section {
     display: flex;
     flex-direction: column;
     max-width: 70%;
-    padding: 0% 10% 5% 10%;
-    margin-top: 1%;
+    margin: 0% 10% 5% 10%;
     align-items: center;
     align-self: center;
 }
@@ -134,16 +133,11 @@ section img {
 }
 
 .social {
-    max-width: inherit;
-    margin-top: 10px;
-    text-align: center;
-    text-size-adjust: 100%;
-}
-
-.social a {
     display: flex;
-    float: left;
-    text-align: center;
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 130%;
+    margin-top: 1%;
 }
 
 .link-transition a {
@@ -152,7 +146,6 @@ section img {
 
 ul {
     padding-inline-start: 0px;
-    justify-items: space-around;
     min-width: 300px;
 }
 
@@ -192,4 +185,12 @@ form {
 
 input, textarea {
     width: 100%;
+}
+
+#link {
+    color: inherit;
+}
+
+#link:hover{
+    opacity: 70%;
 }
