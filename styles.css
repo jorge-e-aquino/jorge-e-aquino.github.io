@@ -1,5 +1,6 @@
 * {
     font-family: 'Oswald', sans-serif;
+    animation: fadeInAnimation ease-in-out;
 }
 
 html {
@@ -15,7 +16,6 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    animation: fadeInAnimation ease-in-out;
     animation-duration: 0.5s;
 }
 
