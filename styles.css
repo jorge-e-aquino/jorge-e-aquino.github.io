@@ -12,11 +12,11 @@ html {
 }
 
 html {
-    animation: fadeIn ease-in .3s;
-    -webkit-animation: fadeIn ease-in .3s;
-    -moz-animation: fadeIn ease-in .3s;
-    -o-animation: fadeIn ease-in .3s;
-    -ms-animation: fadeIn ease-in .3s;
+    animation: fadeIn ease-in .5s;
+    -webkit-animation: fadeIn ease-in .5s;
+    -moz-animation: fadeIn ease-in .5s;
+    -o-animation: fadeIn ease-in .5s;
+    -ms-animation: fadeIn ease-in .5s;
 }
 
 @keyframes fadeIn {
