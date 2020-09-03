@@ -42,18 +42,18 @@ header {
     width: 100%;
 }
 
-header a {
-    justify-content: center;
-}
-
 header a img {
-    max-width: 40%;    
-    padding-left: 30%;
+    max-width: 100%;
+    position: sticky;
 }
 
+header img:hover {
+    width: min-content;
+    opacity: 60%;
+}
 
 header nav a:hover {
-    opacity: 70%;
+    opacity: 60%;
 }
 
 a:link {
@@ -83,28 +83,43 @@ nav a {
 
 .container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
     margin: -1% 1% 1% 1%;
 }
 
 .container a {
-    background: #585858;
-    max-width: 910px;
-    margin: 1% 0% 1% 0%;
+    box-shadow: 1vh #3b3b3bbe;
+    margin: 2% 2%;
 }
 
 .container a img {
     max-width: 100%;
-    height: 100%;
     object-fit: cover;
     opacity: 1;
     transition: .3s ease-in-out;
+    border-radius: 2vh;
 }
 
-.container a:hover img {
+.container img:hover {
     opacity: .5;
 }
+
+#resume:hover {
+    opacity: 1;
+}
+
+/* #gtsalsa {
+    background-image: url(/images/gtsalsa-container.png);
+}
+
+#baugasm {
+    background-image: url(/images/baugasm-container.png);
+} */
+
 
 .page div {
     text-align: center;
