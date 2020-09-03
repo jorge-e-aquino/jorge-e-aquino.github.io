@@ -1,6 +1,5 @@
 * {
     font-family: 'Oswald', sans-serif;
-    box-sizing: border-box;
 }
 
 html {
@@ -9,19 +8,30 @@ html {
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     justify-items: center;
     vertical-align: middle;
+    margin-top: 1.6%;
 }
 
 body {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     animation: fadeInAnimation ease-in;
     animation-duration: 0.5s;
+    max-width: inherit;
 }
 
 @keyframes fadeInAnimation {
-    from {opacity: 0%;}
-    to {opacity: 100%;}
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }
 
 header {
@@ -30,20 +40,21 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: lightblue;
 }
 
-header img {
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 200px;
+header a {
+    justify-content: center;
 }
+
+header a img {
+    max-width: 40%;    
+    padding-left: 30%;
+}
+
 
 header nav a:hover {
-	opacity: 50%;
-}
-
-header a:hover {
-	opacity: 70%;
+    opacity: 70%;
 }
 
 a:link {
@@ -56,25 +67,26 @@ a:visited {
 
 nav {
     display: flex;
-    flex-basis: 100px;
-    flex-grow: 1;
-    min-width: 500px;
+    flex-direction: row;
+    width: 85%;
     justify-content: space-evenly;
+    margin-top: -1%;
 }
 
 nav a {
-    font-size: 130%;
+    font-size: 180%;
     color: black;
     text-decoration: none;
-    padding: 5% 5% 0.5% 5%;
-    margin-top: 5%;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 1.6% 1% 1% 1%;
+    margin: 0% 1% 1% 1%;
 }
 
 .container a {
@@ -88,11 +100,11 @@ nav a {
     height: 100%;
     object-fit: cover;
     opacity: 1;
-	transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .container a:hover img {
-	opacity: .5;
+    opacity: .5;
 }
 
 .page div {
@@ -100,29 +112,30 @@ nav a {
 }
 
 section {
-    width: auto;
     display: flex;
     flex-direction: column;
-    padding: 2.5% 10% 5% 10%;
+    max-width: 70%;
+    padding: 0% 10% 5% 10%;
+    margin-top: 1%;
     align-items: center;
     align-self: center;
 }
 
 section p {
     font-size: 20px;
-    width: 1200px;
+    width: 100%;
     text-align: center;
     color: #3b3b3bbe;
-    margin-top: -10px;
 }
 
 section img {
-    padding: 1% 50px 3% 50px;
-    width: 1200px;
-    object-fit: fill;
+    padding: 1%;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .social {
+    max-width: inherit;
     margin-top: 10px;
     text-align: center;
     text-size-adjust: 100%;
@@ -151,7 +164,7 @@ ul li {
 }
 
 ul li a:hover {
-	opacity: 65%;
+    opacity: 65%;
 }
 
 ul li a {
@@ -166,6 +179,7 @@ ul li a svg {
 
 label {
     margin: 1.5% 0%;
+    width: 95%;
 }
 
 .captcha {
@@ -173,5 +187,10 @@ label {
 }
 
 form {
+    width: 100%;
     padding-top: 0%;
+}
+
+input, textarea {
+    width: 100%;
 }

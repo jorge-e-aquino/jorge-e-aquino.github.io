@@ -23,32 +23,27 @@
     <meta name="msapplication-TileImage" content=/images/favicons/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- ****** favicons ****** -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet" />
     <title>Contact</title>
     <style>
-        input,
-        textarea {
-            outline: none;
-        }
-
         form {
-            width: 1200px;
+            width: 100%;
         }
 
         .form-inner {
-            padding: 2% 4% 2% 4%;
+            padding: 2% 4%;
             display: flex;
             flex-direction: column;
         }
 
         .form-inner input,
         .form-inner textarea {
-            display: block;
-            width: 100%;
-            padding: 16px 22px 16px 22px;
+            max-width: 100%;
+            padding: 2.5%;
             margin-bottom: 0px;
             border: none;
-            border-radius: 20px;
+            border-radius: 2vh;
             background: #303030;
             font-size: 20px;
             color: #fff
@@ -59,11 +54,10 @@
         }
 
         button {
-            width: inherit;
-            height: 100%;
-            padding: 10px;
-            margin-top: 16px;
-            border-radius: 20px;
+            max-width: inherit;
+            padding: 1.7%;
+            margin-top: 1%;
+            border-radius: 2vh;
             border: none;
             background: #3b3b3bbe;
             font-size: 20px;
@@ -90,18 +84,19 @@
         </a>
         <nav>
             <a href="index.html">WORK</a>
-            <a href="contact.html">CONTACT</a>
+            <a href="resume.html">RESUME</a>
             <a href="about.html">ABOUT</a>
         </nav>
     </header>
-    <section style="margin-top: -3%">
+
+    <!-- form -->
+    <section class="page">
         <form name="contact" data-netlify="true" data-netlify-recaptcha="true" style="margin-top: 2%;">
             <div class="form-inner">
                 <label><input name="name" type="text" placeholder="Your Name"></label>
                 <label><input name="email" type="email" placeholder="Email" required></label>
-                <label><textarea name="message" placeholder="Message..." rows="4" required></textarea></label>
-                <div data-netlify-recaptcha="true" class="captcha" style="margin-top: 20px;"></div>
-                <button type="submit">Submit</button>
+                <label><textarea name="message" placeholder="Message..." rows="2" required></textarea></label>
+                <button type="submit">SUBMIT</button>
             </div>
         </form>
     </section>
