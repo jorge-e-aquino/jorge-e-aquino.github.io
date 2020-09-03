@@ -31,7 +31,7 @@
 <body>
     <header>
         <a href="index.html" id="logo">
-            <img src="images/logo.png" />
+            <img src="images/logo.png" loading="lazy"/>
         </a>
         <nav>
             <a href="index.html">WORK</a>
@@ -40,18 +40,21 @@
         </nav>
     </header>
 
-    <section class="page">
-        <img src="https://i.ibb.co/txS9T5w/Processed-with-VSCO-with-ss1-preset.jpg" alt="picture of jorge aquino" style="
+    <div class="container page">
+        <img src="https://i.ibb.co/txS9T5w/Processed-with-VSCO-with-ss1-preset.jpg" loading="lazy" alt="picture of jorge aquino" style="
             border-radius: 2vh;
             object-fit: cover;
+            opacity: 1;
             padding: 0%;
-            max-width: 100%;
+            max-width: 90%;
             margin-top: 3%;
           " /></a>
         <p style="margin-bottom: -3%;">
             <span style="font-size: 30px;">Jorge Aquino</span></p>
-        <p style="margin-bottom: 10%; margin-top: 6%;">
-            Computational Media at
+        <p style="margin-bottom: 10%; margin-top: 6%;"><span>
+            <a href="https://cm.lmc.gatech.edu/" id="link">
+            Computational Media at </a>
+            </span>
             <br />
             <span>
                 <a href="www.gatech.edu" id="link">Georgia Tech</a>
