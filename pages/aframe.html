@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html id="top">
+  <head>
+    <link rel="stylesheet" href="../styles.css" />
+    <!-- ****** favicons ****** -->
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57"
+    href=/images/favicons/apple-icon-57x57.png" /> <link rel="apple-touch-icon"
+    sizes="60x60" href=/images/favicons/apple-icon-60x60.png" /> <link
+    rel="apple-touch-icon" sizes="72x72"
+    href=/images/favicons/apple-icon-72x72.png" /> <link rel="apple-touch-icon"
+    sizes="76x76" href=/images/favicons/apple-icon-76x76.png" /> <link
+    rel="apple-touch-icon" sizes="114x114"
+    href=/images/favicons/apple-icon-114x114.png" /> <link
+    rel="apple-touch-icon" sizes="120x120" href=" /> <link rel="
+    apple-touch-icon" sizes="144x144"
+    href=/images/favicons/apple-icon-144x144.png" /> <link
+    rel="apple-touch-icon" sizes="152x152"
+    href=/images/favicons/apple-icon-152x152.png" /> <link
+    rel="apple-touch-icon" sizes="180x180"
+    href=/images/favicons/apple-icon-180x180.png" /> <link rel="icon"
+    type="image/png" sizes="192x192"
+    href=/images/favicons/android-icon-192x192.png" /> <link rel="icon"
+    type="image/png" sizes="32x32" href=/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96"
+    href=/images/favicons/favicon-96x96.png" /> <link rel="icon"
+    type="image/png" sizes="16x16" href=/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href=/images/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage"
+    content=/images/favicons/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- ****** favicons ****** -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aframe -->
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <!-- aframe end -->
+    <title>Aframe</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html" id="logo">
+        <img src="../images/logo.png" loading="eager" />
+      </a>
+      <nav loading="lazy">
+        <a href="../index.html">WORK</a>
+        <a href="../resume.html">RESUME</a>
+        <a href="../about.html">ABOUT</a>
+      </nav>
+    </header>
+
+    <div class="container page">
+      <p>
+        (this is a work in progress of my experimentation with Aframe, more info
+        <span
+          ><a
+            href="https://aframe.io/"
+            id="link"
+            style="color: inherit; margin: 0%; text-decoration: underline;"
+            >here</a
+          ></span
+        >)
+      </p>
+      <div id="embeddedScene">
+        <a-scene embedded>
+          <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+          <a-sphere
+            position="0 1.25 -5"
+            radius="1.25"
+            color="#EF2D5E"
+          ></a-sphere>
+          <a-cylinder
+            position="1 0.75 -3"
+            radius="0.5"
+            height="1.5"
+            color="#FFC65D"
+          ></a-cylinder>
+          <a-plane
+            position="0 0 -4"
+            rotation="-90 0 0"
+            width="4"
+            height="4"
+            color="#7BC8A4"
+          ></a-plane>
+          <canvas class="a-canvas"></canvas>
+          <a-entity
+            camera=""
+            position=""
+            wasd-controls=""
+            rotation=""
+            look-controls=""
+            aframe-injected=""
+          >
+          </a-entity>
+          <a-sky color="rgba(10, 140, 150)"></a-sky>
+        </a-scene>
+      </div>
+    </div>
+  </body>
+</html>
