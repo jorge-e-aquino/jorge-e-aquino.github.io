@@ -288,6 +288,6 @@ a-scene {
 #embeddedScene {
     margin-top: 3%;
     display: block;
-    width: 1000px;
-    height: 500px;
+    width: 120vh;
+    height: 84vh;
 }
