@@ -269,3 +269,25 @@ ul li a svg {
 #link:hover {
     opacity: 70%;
 }
+
+a-scene {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.a-canvas {
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+}
+
+#embeddedScene {
+    margin-top: 3%;
+    display: block;
+    width: 1000px;
+    height: 500px;
+}
