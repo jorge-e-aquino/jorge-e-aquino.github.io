@@ -2,6 +2,7 @@
 <html id="top">
   <head>
     <link rel="stylesheet" href="../styles.css" />
+
     <!-- ****** favicons ****** -->
     <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="57x57"
@@ -31,14 +32,16 @@
     content=/images/favicons/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- ****** favicons ****** -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
       rel="stylesheet"
     />
+
     <!-- aframe -->
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-    <!-- aframe end -->
+
     <title>Aframe</title>
   </head>
 
@@ -58,37 +61,60 @@
       <p>
         (this is a work in progress of my experimentation with Aframe, more info
         <span
-          ><a target="_blank"
+          ><a
+            target="_blank"
             href="https://aframe.io/"
             id="link"
-            style="color: inherit; margin: 0%; text-decoration: underline;"
+            style="color: inherit; margin: 0%; text-decoration: underline"
             >here</a
           ></span
         >)
-        <br>
-        Try using WASD keys and your mouse to move through the scene!
+        <br />
+        Try using WASD keys and your mouse to move through the 3D-rendered
+        scene!
       </p>
       <div id="embeddedScene">
+        <audio
+          id="audio"
+          src="https://cdn.glitch.com/2d230eef-a010-40d3-9ecf-f05f95668f93%2Fshootingstars.mp3?1493689360669"
+          autoplay
+          loop
+        ></audio>
+        <script>
+          var audio = document.getElementById("audio");
+          audio.volume = 0.3;
+        </script>
         <a-scene embedded>
-          <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
           <a-sphere
+            animation="property: color; to: #fde3d5; loop: true; dur: 470; delay: 23168;"
             position="0 1.25 -5"
             radius="1.25"
             color="#EF2D5E"
           ></a-sphere>
+          <a-box
+            animation="property: rotation; to: 360 45 360; loop: true; dur: 3500; delay: 23300; easing: easeInOutQuint"
+            position="-1 0.5 -3"
+            rotation="0 45 0"
+            color="#4CC3D9"
+          ></a-box>
           <a-cylinder
+            animation="property: rotation; to: 360 45 360; loop: true; dur: 5000; delay: 23300; easing: easeInOutBack"
             position="1 0.75 -3"
             radius="0.5"
             height="1.5"
             color="#FFC65D"
           ></a-cylinder>
-          <a-plane
+          <!-- <a-plane
             position="0 0 -4"
             rotation="-90 0 0"
-            width="4"
-            height="4"
-            color="#7BC8A4"
-          ></a-plane>
+            width="40"
+            height="40"
+            color="#008200"
+          ></a-plane> -->
+          <a-sky
+            color="#bfffff"
+            animation="property: color; to: #000; dur: 7000; delay: 16000; easing: easeInQuad"
+          ></a-sky>
           <canvas class="a-canvas"></canvas>
           <a-entity
             camera
@@ -99,7 +125,9 @@
             aframe-injected
           >
           </a-entity>
-          <a-sky color="rgba(10, 140, 150)"></a-sky>
+
+          <a-entity hand-controls="left"></a-entity>
+          <a-entity hand-controls="right"></a-entity>
         </a-scene>
       </div>
     </div>
