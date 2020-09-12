@@ -47,7 +47,7 @@ header {
 
 header a img {
     max-width: 100%;
-    transition: .2s ease-in-out;
+    transition: .1s ease-in-out;
     position: sticky;
 }
 
@@ -125,7 +125,7 @@ nav a {
 
 #resume {
     max-width: 920px;
-    transition: .2s ease-in-out;
+    transition: .1s ease-in-out;
     object-fit: cover;
     position: -webkit-sticky;
 }
@@ -167,7 +167,7 @@ p {
 
 .back-to-top-fixed {
     text-decoration: none;
-    transition: .2s ease-in-out;
+    transition: .1s ease-in-out;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 60px;
