@@ -109,6 +109,7 @@ nav a {
     opacity: 1;
     transition: .2s ease-in-out;
     border-radius: 2vh;
+    margin-top: 1%;
 }
 
 .article img {
@@ -116,7 +117,7 @@ nav a {
 }
 
 .container img:hover {
-    opacity: .6;
+    opacity: .7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -126,15 +127,16 @@ nav a {
 }
 
 #resume {
-    max-width: 920px;
+    width: 1000px;
     transition: .3s ease-in-out;
     object-fit: cover;
     position: -webkit-sticky;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 #resume:hover {
     opacity: 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 10px 24px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* #gtsalsa {
@@ -161,6 +163,15 @@ p {
 
 .page div {
     text-align: center;
+}
+
+a.highlight {
+  color: darkslateblue;
+}
+
+div.code script {
+  text-align: left;
+  width: 600px;
 }
 
 #long {
