@@ -249,26 +249,26 @@ section img {
     transition: background 0.2s ease, color 0.2s ease;
 }
 
-ul {
+.social ul {
     padding-inline-start: 0px;
     min-width: 300px;
 }
 
-ul li {
+.social ul li {
     list-style-type: none;
     display: inline;
     min-width: 300px;
 }
 
-ul li a:hover {
+.social ul li a:hover {
     opacity: 65%;
 }
 
-ul li a {
+.social ul li a {
     margin: 0% 2%;
 }
 
-ul li a svg {
+.social ul li a svg {
     fill: rgb(2, 42, 85);
     height: 48px;
     width: 48px;
@@ -303,4 +303,27 @@ a-scene {
     display: block;
     width: 120vh;
     height: 84vh;
+}
+
+div.tags li {
+  background-color: rgb(233, 233, 233);
+  margin: 0% 20px;
+  padding: 2px;
+  border: 3px solid rgb(233, 233, 233);
+  border-radius: 3px;
+}
+
+.tags ul {
+  /* Use flex boxes to align li items */
+  display: flex;
+  justify-content: space-around;
+  /* Remove default padding from major browsers */
+  padding: 0;
+  /* Hide the default decorations for li items */
+  list-style: none;
+}
+
+div.tags {
+  margin-top: -5px;
+  margin-bottom: 30px;
 }
