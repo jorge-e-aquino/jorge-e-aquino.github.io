@@ -308,7 +308,7 @@ a-scene {
 
 div.tags li {
   background-color: rgb(233, 233, 233);
-  margin: 0% 20px;
+  margin:  8px 20px;
   padding: 2px;
   border: 3px solid rgb(233, 233, 233);
   border-radius: 3px;
@@ -317,23 +317,38 @@ div.tags li {
 div.tags li#project {
   background-color: rgb(11, 0, 53);
   color: white;
-  margin: 0% 20px;
+  margin: 8px 20px;
   padding: 2px;
   border: 3px solid rgb(11, 0, 53);
   border-radius: 3px;
 }
 
+div.tags li:hover {
+  transform: scale(1.1);
+}
+
 .tags ul {
   /* Use flex boxes to align li items */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   /* Remove default padding from major browsers */
   padding: 0;
   /* Hide the default decorations for li items */
   list-style: none;
+  cursor: default;
+  max-width: 900px;
 }
 
 div.tags {
-  margin-top: -5px;
+  margin-top: -8px;
   margin-bottom: 30px;
+}
+
+.article#long img {
+  width: 600px;
+}
+
+iframe {
+  margin: 40px 0px;
 }
