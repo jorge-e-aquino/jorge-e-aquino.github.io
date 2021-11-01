@@ -128,7 +128,7 @@ nav a {
 }
 
 #resume {
-  max-width: 700px;
+  max-width: 750px;
   transition: .3s ease-in-out;
   object-fit: cover;
   position: -webkit-sticky;
