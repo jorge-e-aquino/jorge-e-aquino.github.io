@@ -230,8 +230,25 @@ p {
   color: #000;
 }
 
-@media (max-width: 500px) {
+.page p#tagline {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: gray;
+  font-style: italic;
+}
 
+@media (max-width: 500px) {
+  .page p#tagline {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: gray;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 500px) {
   .page img,
   p {
     font-size: 13px;
@@ -483,6 +500,7 @@ iframe#chile {
   width: 98%;
   min-height: 100vh;
   border: 0"
+
 }
 
 @media (max-width: 800px) {
