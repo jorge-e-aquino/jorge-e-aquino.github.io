@@ -29,7 +29,6 @@ html {
   }
 }
 
-
 body {
   display: flex;
   animation: fadeIn ease-in-out;
@@ -75,6 +74,24 @@ nav {
   flex-direction: row;
   width: 85%;
   justify-content: center;
+}
+
+@media (max-width: 500px) {
+  nav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  nav a {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  #logo {
+    margin-top: 10px;
+    height: 150px;
+  }
 }
 
 nav a {
@@ -376,8 +393,12 @@ iframe {
 } */
 
 @media (max-width: 500px) {
-  div.tags {
+  div.tags li#tag {
     display: none;
+  }
+  div.tags {
+    margin-top: -10px;
+    margin-bottom: 5px;
   }
 }
 
