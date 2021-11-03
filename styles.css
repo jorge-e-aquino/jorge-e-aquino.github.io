@@ -162,6 +162,12 @@ p {
   color: #000;
 }
 
+@media (max-width: 500px) {
+  .page img,p {
+    font-size: 13px;
+  }
+}
+
 .page div {
   text-align: center;
 }
@@ -351,4 +357,36 @@ div.tags {
 
 iframe {
   margin: 40px 0px;
+  min-width: 60vw;
+  max-width: 80vw;
+  min-height: 30vh;
+  height: 80vh;
+}
+
+@media (max-width: 800px) {
+  iframe {
+    display: none;
+  }
+}
+/* 
+@media (max-width: 500px) {
+  iframe {
+    display: none;
+  }
+} */
+
+@media (max-width: 500px) {
+  div.tags {
+    display: none;
+  }
+}
+
+img.carbon#resume {
+  width: 800px;
+}
+
+@media (max-width: 500px) {
+  img.carbon#resume {
+    width: 98%;
+  }
 }
