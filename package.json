@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "3.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorge-e-aquino/jorge-e-aquino.github.io.git"
+  },
+  "author": "jorge aquino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorge-e-aquino/jorge-e-aquino.github.io/issues"
+  },
+  "homepage": "https://github.com/jorge-e-aquino/jorge-e-aquino.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  }
+}
