@@ -183,6 +183,7 @@ a#resume {
 @media (max-width: 500px) {
   a#resume {
     width: 98%;
+    margin-top: 4.5% !important;
     margin: 0% 0% 10% 0%;
     border-radius: 2vh;
   }
