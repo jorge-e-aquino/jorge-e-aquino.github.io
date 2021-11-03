@@ -83,7 +83,7 @@ nav {
 
 @media (max-width: 500px) {
   nav {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
     justify-content: space-between;
   }
@@ -440,7 +440,7 @@ div.tags li#project {
 }
 
 div.tags li:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .tags ul {
@@ -457,13 +457,13 @@ div.tags li:hover {
 }
 
 div.tags {
-  margin-top: -30px;
+  margin-top: -35px !important;
   margin-bottom: 0px;
 }
 
 @media (max-width: 800px) {
   div.tags {
-    margin-top: -8px;
+    margin-top: -20px !important;
     margin-bottom: 25px;
   }
 }
@@ -478,6 +478,12 @@ iframe {
   max-width: 80vw;
   min-height: 30vh;
   height: 80vh;
+}
+
+iframe#chile {
+  width: 98%;
+  min-height: 100vh;
+  border: 0"
 }
 
 @media (max-width: 800px) {
