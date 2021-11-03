@@ -57,8 +57,7 @@ header a img {
   position: sticky;
 }
 
-header img:hover {
-  width: min-content;
+header a img:hover {
   opacity: 60%;
 }
 
