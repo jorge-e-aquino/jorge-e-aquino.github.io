@@ -158,11 +158,23 @@ nav a {
   box-shadow: none;
 }
 
+p#references {
+  margin-bottom: 5%;
+}
+
+p#references a {
+  text-decoration: underline;
+  margin: 0% 2% 0% 2%;
+}
+
 @media (max-width: 500px) {
   p#references {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+  }
+
+  p#references a {
     text-decoration: underline;
   }
 }
@@ -218,7 +230,7 @@ img#resume:hover {
 } */
 
 .page p {
-  margin: 5% 0% 5% 0%;
+  margin: 4% 0% 2% 0%;
 }
 
 .page img,
