@@ -263,7 +263,7 @@
       <div class="tags" id="gtsalsa">
         <ul>
           <li id="project">GT Salsa</li>
-          <li id="tag">Adobe Illustrator</li>
+          <li id="tag">Brand Identity</li>
           <li id="tag">Graphic Design</li>
           <li id="tag">Marketing</li>
           <li id="tag">Canva</li>
@@ -321,5 +321,28 @@
         </g>
       </svg>
     </a>
+
+    <script type="text/javascript">
+      console.log("hello");
+      let count = 0;
+
+      function invert() {
+        let html = document.querySelector("html");
+        let body = document.querySelector("body");
+        console.log(html);
+        document.getElementById("portfolio").addEventListener("click", () => {
+          if (count % 2 == 0) {
+            html.style.setProperty("background-color", "black");
+            body.style.setProperty("-webkit-filter", "invert(100%)");
+          } else {
+            html.style.setProperty("background-color", "white");
+            body.style.setProperty("-webkit-filter", "invert(0%)");
+          }
+          count++;
+        });
+      }
+
+      invert();
+    </script>
   </body>
 </html>

@@ -16,6 +16,11 @@ html {
   -o-animation: fadeIn ease-in .5s;
   -ms-animation: fadeIn ease-in .5s;
 
+  background-color: white;
+}
+
+.invert {
+  -webkit-filter: invert(100%);
 }
 
 @media (max-width: 500px) {
@@ -52,7 +57,7 @@ header {
 }
 
 header a img {
-  max-width: 100%;
+  max-width: 500px;
   transition: .1s ease-in-out;
   position: sticky;
 }
