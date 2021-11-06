@@ -102,6 +102,7 @@ nav {
   #logo {
     margin-top: 10px;
     height: 140px;
+    width: auto;
   }
 }
 
@@ -446,6 +447,11 @@ div.tags li#project {
 #research li#project {
   background-color: #7e9dc0;
   border: 3px solid #7e9dc0;
+}
+
+#cma li#project {
+  background-color: #9c2d70;
+  border: 3px solid #9c2d70;
 }
 
 #trendylocations li#project {
