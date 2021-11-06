@@ -29,7 +29,11 @@ html {
   }
 
   html p {
-    text-align: left !important;
+    text-align: left;
+  }
+
+  html div#center p {
+    text-align: center !important;
   }
 }
 
