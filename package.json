@@ -4,7 +4,7 @@
   "description": "website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -w scss/ -o css/ --recursive"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/jorge-e-aquino/jorge-e-aquino.github.io#readme",
   "dependencies": {
-    "bootstrap": "^3.4.1"
+    "bootstrap": "^3.4.1",
+    "node-sass": "^6.0.1",
+    "tilt.js": "^1.2.1"
   }
 }
