@@ -101,9 +101,10 @@ nav {
 	margin: -1% 1% 2% 1%;
 	a.project {
 		box-shadow: 1vh #3b3b3bbe;
-		transform: scale(0.8);
 	}
 	a {
+    width: 900px;
+    margin-bottom: 30px;
 		img {
 			max-width: 100%;
 			object-fit: cover;
@@ -321,7 +322,7 @@ div.tags {
 		border-radius: 3px;
 	}
 	margin-top: -35px !important;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 #quasar {
 	li#project {
@@ -397,7 +398,7 @@ div.tags {
 		padding: 0;
 		list-style: none;
 		cursor: default;
-		max-width: 900px;
+		max-width: 1000px;
 	}
 }
 .article#long {
@@ -450,9 +451,8 @@ img.carbon#resume {
 	}
 	.container {
 		a.project {
+      width: 90vw;
 			box-shadow: 1vh #3b3b3bbe;
-			margin: 2% 2%;
-			transform: scale(1);
 		}
 	}
 	p#references {
@@ -494,12 +494,15 @@ img.carbon#resume {
 	p {
 		font-size: 13px;
 	}
+  ul {
+    margin-top: 5px;
+  }
 	div.tags {
 		li#tag {
 			display: none;
 		}
 		margin-top: -10px;
-		margin-bottom: 5px;
+		margin-bottom: 0px;
 	}
 	img.carbon#resume {
 		width: 98%;
@@ -508,7 +511,7 @@ img.carbon#resume {
 @media (max-width: 800px) {
 	div.tags {
 		margin-top: -20px !important;
-		margin-bottom: 25px;
+		margin-bottom: 10px;
 	}
 	iframe {
 		display: none;
