@@ -3,18 +3,20 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-CDSY9KSB1Y"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-  
-    gtag("config", "G-CDSY9KSB1Y");
-  </script>
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CDSY9KSB1Y"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CDSY9KSB1Y");
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="css/styles.css" />
 
     <!--favicons-->
@@ -119,12 +121,13 @@
         alt="Jorge Aquino Resume"
         target="_blank"
         id="resume"
+        data-tilt
+        data-tilt-scale="1"
+        data-tilt-maxTilt="10"
+        data-tilt-perspective="5000"
+        data-tilt-reset="false"
       >
-        <img
-          src="images/JorgeA_Resume-1.png"
-          id="resume"
-          loading="picture"
-        />
+        <img src="images/JorgeA_Resume-1.png" id="resume" loading="picture" />
       </a>
     </div>
     <a
@@ -164,5 +167,6 @@
         </g>
       </svg>
     </a>
+    <script src="/tilt.jquery.js"></script>
   </body>
 </html>
