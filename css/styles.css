@@ -3,6 +3,7 @@
 }
 
 html {
+  cursor: url(""), none;
   font-family: "PT Mono", monospace;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
@@ -68,6 +69,7 @@ header nav {
 }
 header nav a:hover {
   opacity: 50%;
+  transform: scale(1.2);
 }
 
 .container {
@@ -202,7 +204,8 @@ p {
   right: 30px;
 }
 .back-to-top-fixed:hover {
-  opacity: 0.7;
+  opacity: 0.2;
+  transform: scale(1.2);
 }
 
 .icon-back-to-top {
@@ -265,6 +268,7 @@ svg:not(:root) {
 }
 
 div.tags {
+  pointer-events: none;
   margin-top: -35px !important;
   margin-bottom: 20px;
 }
@@ -356,6 +360,10 @@ div.tags li#project {
 }
 
 @media (max-width: 500px) {
+  .circle {
+    display: none;
+  }
+
   body {
     padding-bottom: 50px;
   }
@@ -398,7 +406,8 @@ div.tags li#project {
     border-radius: 2vh;
   }
 
-  .page img {
+  .article img {
+    margin-top: 40px !important;
     font-size: 13px;
   }
 

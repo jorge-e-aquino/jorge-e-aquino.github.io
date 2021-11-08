@@ -7,6 +7,7 @@ html {
     text-align: left;
   }
 
+  cursor: url(''), none;
   font-family: 'PT Mono',
   monospace;
   -webkit-font-smoothing: antialiased;
@@ -75,6 +76,7 @@ header {
     a {
       &:hover {
         opacity: 50%;
+        transform: scale(1.2);
       }
     }
   }
@@ -229,7 +231,8 @@ p {
   right: 30px;
 
   &:hover {
-    opacity: .7;
+    opacity: .2;
+    transform: scale(1.2);
   }
 }
 
@@ -303,6 +306,7 @@ svg {
 }
 
 div.tags {
+  pointer-events: none;
   margin-top: -35px !important;
   margin-bottom: 20px;
 
@@ -420,6 +424,10 @@ div.tags {
 
 @media (max-width:500px) {
 
+  .circle {
+    display: none;
+  }
+
   body {
     padding-bottom: 50px;
   }
@@ -476,8 +484,9 @@ div.tags {
     border-radius: 2vh;
   }
 
-  .page {
+  .article {
     img {
+      margin-top: 40px !important;
       font-size: 13px;
     }
   }
