@@ -368,6 +368,12 @@ div.tags li#project {
     padding-bottom: 50px;
   }
 
+  a.project img {
+    width: 90vw;
+    height: auto;
+    background-color: #000;
+  }
+
   html p {
     text-align: left;
   }
