@@ -350,10 +350,6 @@ div.tags li#project {
     height: 140px;
   }
 
-  .container {
-    align-items: center;
-    align-content: center;
-  }
   .container a {
     width: 90vw;
   }
