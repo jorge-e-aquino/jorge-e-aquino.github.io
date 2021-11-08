@@ -277,11 +277,13 @@ svg {
       display: inline;
       min-width: 300px;
 
+      &:hover {}
+
       a {
         margin: 0 2%;
 
         &:hover {
-          opacity: 65%;
+          opacity: 50%;
         }
 
         svg {
@@ -307,6 +309,15 @@ svg {
   p {
     text-align: center !important;
   }
+
+  p#tagline {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -1px;
+  }
+
 }
 
 div.tags {
@@ -417,6 +428,31 @@ div.tags {
   }
 }
 
+
+.hidden {
+  opacity: 0;
+}
+
+.console-container {
+  width: 800px;
+  font-size: 40px !important;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-size: 4em;
+  text-align: center;
+  color: white;
+  margin-bottom: -20px;
+}
+
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+
 #about {
   border-radius: 2vh;
   object-fit: cover;
@@ -451,7 +487,16 @@ div.tags {
 
     div#center {
       p {
-        text-align: center !important;
+        text-align: center;
+      }
+
+      p#tagline {
+        width: 90vw;
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: -1px;
       }
     }
   }
@@ -466,8 +511,9 @@ div.tags {
 
     a#logo {
       #logo {
-        margin-top: 10px;
-        height: 140px;
+        margin-top: 20px;
+        width: 90vw;
+        height: auto;
       }
     }
   }
@@ -505,7 +551,10 @@ div.tags {
 
   p {
     font-size: 13px;
+
   }
+
+
 
   div.tags {
     margin-top: -10px;
@@ -522,6 +571,21 @@ div.tags {
 
   .about_img {
     margin: 10% 0% 0% 0% !important;
+  }
+
+  .console-container {
+    width: 90vw !important;
+    line-height: 99%;
+    font-size: 35px !important;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 60px !important;
   }
 }
 

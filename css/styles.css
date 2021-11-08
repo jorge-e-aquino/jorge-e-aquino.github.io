@@ -248,7 +248,7 @@ svg:not(:root) {
   margin: 0 2%;
 }
 .social ul li a:hover {
-  opacity: 65%;
+  opacity: 50%;
 }
 .social ul li a svg {
   fill: #022a55;
@@ -266,6 +266,13 @@ svg:not(:root) {
 
 #center p {
   text-align: center !important;
+}
+#center p#tagline {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 
 div.tags {
@@ -351,6 +358,30 @@ div.tags li#project {
   max-width: 1000px;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.console-container {
+  width: 800px;
+  font-size: 40px !important;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-size: 4em;
+  text-align: center;
+  color: white;
+  margin-bottom: -20px;
+}
+
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+
 #about {
   border-radius: 2vh;
   object-fit: cover;
@@ -379,7 +410,15 @@ div.tags li#project {
     text-align: left;
   }
   html div#center p {
-    text-align: center !important;
+    text-align: center;
+  }
+  html div#center p#tagline {
+    width: 90vw;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -1px;
   }
 
   header nav {
@@ -389,8 +428,9 @@ div.tags li#project {
     font-size: 80%;
   }
   header a#logo #logo {
-    margin-top: 10px;
-    height: 140px;
+    margin-top: 20px;
+    width: 90vw;
+    height: auto;
   }
 
   .container a {
@@ -436,6 +476,21 @@ div.tags li#project {
 
   .about_img {
     margin: 10% 0% 0% 0% !important;
+  }
+
+  .console-container {
+    width: 90vw !important;
+    line-height: 99%;
+    font-size: 35px !important;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 60px !important;
   }
 }
 @media (max-width: 800px) {
