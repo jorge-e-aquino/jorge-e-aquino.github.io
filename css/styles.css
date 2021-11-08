@@ -85,7 +85,6 @@ header nav a:hover {
   margin: -1% 1% 2%;
 }
 .container a {
-  width: 900px;
   margin-bottom: 30px;
 }
 .container a img {
@@ -165,6 +164,9 @@ a#resume {
   padding: 0;
 }
 
+img#resume {
+  max-width: 600px;
+}
 img#resume:hover {
   opacity: 1;
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.26), 0 10px 24px 0 rgba(0, 0, 0, 0.322);
@@ -348,6 +350,11 @@ div.tags li#project {
   border: 3px solid #fd3738;
 }
 
+#baugasm li#project {
+  background-color: #00bb4d;
+  border: 3px solid #00bb4d;
+}
+
 .tags ul {
   display: flex;
   flex-wrap: wrap;
@@ -429,7 +436,7 @@ div.tags li#project {
   }
   header a#logo #logo {
     margin-top: 20px;
-    width: 90vw;
+    width: 60vw;
     height: auto;
   }
 
@@ -453,16 +460,22 @@ div.tags li#project {
     border-radius: 2vh;
   }
 
+  .article {
+    margin-top: -10px !important;
+  }
   .article img {
+    height: auto;
     margin-top: 40px !important;
     font-size: 13px;
   }
 
   p {
+    margin-top: 30px !important;
     font-size: 13px;
   }
 
   div.tags {
+    text-align: center;
     margin-top: -10px;
     margin-bottom: 0;
   }
@@ -471,6 +484,10 @@ div.tags li#project {
   }
 
   iframe {
+    display: none;
+  }
+
+  .app {
     display: none;
   }
 
