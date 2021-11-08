@@ -14,4 +14,5 @@ You will submit a draft of the site for preliminary grading on September 11, but
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/28f9ec8e-5647-4e5a-8ee1-a2601183e6d4/deploy-status)](https://app.netlify.com/sites/aquinodesign/deploys)
 
-<a href="https://ibb.co/JBFT3nj"><img src="https://i.ibb.co/PmzyDxG/Screen-Shot-2021-11-08-at-2-10-44-AM.png" alt="Screen-Shot-2021-11-08-at-2-10-44-AM" border="0"></a>
+## Lighthouse Score
+<a href="https://ibb.co/LCnWsdC"><img src="https://i.ibb.co/hKDjTFK/Screen-Shot-2021-11-08-at-2-31-55-AM.png" alt="Screen-Shot-2021-11-08-at-2-31-55-AM" border="0"></a>
