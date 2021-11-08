@@ -33,6 +33,7 @@ html p {
   background: white;
   border-radius: 80%;
   backface-visibility: hidden;
+  opacity: 0.9;
 }
 
 body {
