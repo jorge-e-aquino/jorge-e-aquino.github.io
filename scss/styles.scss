@@ -376,6 +376,7 @@ div.tags {
 }
 
 @media (max-width:500px) {
+
   body {
     padding-bottom: 50px;
   }
@@ -409,6 +410,14 @@ div.tags {
   }
 
   .container {
+    a {
+      width: 90vw;
+
+      img#resume {
+        width: 90vw;
+      }
+    }
+
     a.project {
       margin: 2%;
       transform: scale(1);
@@ -417,15 +426,7 @@ div.tags {
     }
   }
 
-  a {
-    img#resume {
-      border-radius: 2vh;
-      margin: 0 !important;
-    }
-  }
-
   a#resume {
-    width: 98%;
     margin-top: 4.5% !important;
     margin: 0 0 10% 0;
     border-radius: 2vh;
@@ -448,6 +449,10 @@ div.tags {
     li#tag {
       display: none;
     }
+  }
+
+  iframe {
+    display: none;
   }
 }
 

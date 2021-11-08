@@ -333,6 +333,12 @@ div.tags li#project {
     height: 140px;
   }
 
+  .container a {
+    width: 90vw;
+  }
+  .container a img#resume {
+    width: 90vw;
+  }
   .container a.project {
     margin: 2%;
     transform: scale(1);
@@ -340,13 +346,7 @@ div.tags li#project {
     box-shadow: 1vh #3b3b3bbe;
   }
 
-  a img#resume {
-    border-radius: 2vh;
-    margin: 0 !important;
-  }
-
   a#resume {
-    width: 98%;
     margin-top: 4.5% !important;
     margin: 0 0 10% 0;
     border-radius: 2vh;
@@ -365,6 +365,10 @@ div.tags li#project {
     margin-bottom: 0;
   }
   div.tags li#tag {
+    display: none;
+  }
+
+  iframe {
     display: none;
   }
 }
