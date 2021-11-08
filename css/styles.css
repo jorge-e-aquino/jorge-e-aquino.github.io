@@ -1,3 +1,7 @@
+* {
+  cursor: none;
+}
+
 html {
   font-family: "PT Mono", monospace;
   -webkit-font-smoothing: antialiased;
@@ -17,6 +21,19 @@ html p {
   text-align: left;
 }
 
+.circle {
+  pointer-events: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0px 0px -25px;
+  background: white;
+  border-radius: 80%;
+  backface-visibility: hidden;
+}
+
 body {
   flex-direction: column;
   align-items: center;
@@ -26,6 +43,7 @@ body {
 }
 
 header {
+  pointer-events: auto;
   flex-direction: column;
   align-items: center;
   font-family: "Oswald", sans-serif;
@@ -53,6 +71,7 @@ header nav a:hover {
 }
 
 .container {
+  pointer-events: auto;
   display: flex;
   justify-content: center;
   max-width: 1200px;
@@ -82,6 +101,9 @@ header nav a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+a {
+  pointer-events: auto;
+}
 a:link {
   text-decoration: none;
 }
@@ -111,6 +133,9 @@ img:focus-visible {
   outline: none;
 }
 
+nav {
+  pointer-events: auto;
+}
 nav a {
   color: #000;
   font-family: "Oswald", sans-serif;
@@ -120,6 +145,9 @@ nav a {
   margin: 2% 0.9%;
 }
 
+.article {
+  pointer-events: auto;
+}
 .article img {
   margin: 3% 0 1%;
 }
