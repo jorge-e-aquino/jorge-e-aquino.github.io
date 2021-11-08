@@ -9,7 +9,12 @@
 }
 
 html {
-  font-family: 'PT Mono', monospace;
+  p {
+    text-align: left;
+  }
+
+  font-family: 'PT Mono',
+  monospace;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
   scroll-behavior: smooth;
@@ -47,7 +52,7 @@ header {
       position: sticky;
 
       &:hover {
-        opacity: 60%;
+        opacity: 80%;
       }
     }
   }
@@ -98,7 +103,6 @@ header {
 
   img {
     &:hover {
-      opacity: .7;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
     }
   }
@@ -113,13 +117,30 @@ a {
     color: #000;
   }
 
+  &#resume {
+    width: 60vh;
+  }
+
   img#resume {
+    width: 60vh;
     object-fit: cover;
     border-radius: 2vh;
-    max-width: 750px;
     transition: .3s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1), 0 6px 20px 0 rgba(0, 0, 0, .1);
   }
+}
+
+/*
+  This will hide the focus indicator if the element receives focus via the mouse,
+  but it will still show up on keyboard focus.
+*/
+
+a:focus-visible {
+  outline: none;
+}
+
+img:focus-visible {
+  outline: none;
 }
 
 nav {
@@ -167,11 +188,6 @@ img#resume {
     border-radius: 2vh;
     font-size: 20px;
     width: 100%;
-    color: #000;
-    text-align: center;
-  }
-
-  div {
     text-align: center;
   }
 }
@@ -228,14 +244,13 @@ svg {
 
 .social {
   flex: 1;
-  max-width: 130%;
   margin-top: -4%;
   display: flex;
-  flex-wrap: wrap;
 
   ul {
-    padding-inline-start: 0;
-    min-width: 300px;
+    padding-inline-start: 0px;
+    justify-content: space-between;
+    width: 187px;
 
     li {
       list-style-type: none;
@@ -265,6 +280,12 @@ svg {
 
   &:hover {
     opacity: 70%;
+  }
+}
+
+#center {
+  p {
+    text-align: center !important;
   }
 }
 
@@ -375,6 +396,15 @@ div.tags {
   }
 }
 
+#about {
+  border-radius: 2vh;
+  object-fit: cover;
+  transition: .2s ease-in-out;
+  padding: 0%;
+  max-width: 90%;
+  margin: 10% 0% 0% 0% !important;
+}
+
 @media (max-width:500px) {
 
   body {
@@ -427,6 +457,7 @@ div.tags {
   }
 
   a#resume {
+    width: 90vw;
     margin-top: 4.5% !important;
     margin: 0 0 10% 0;
     border-radius: 2vh;
@@ -453,6 +484,10 @@ div.tags {
 
   iframe {
     display: none;
+  }
+
+  .about_img {
+    margin: 10% 0% 0% 0% !important;
   }
 }
 
