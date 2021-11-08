@@ -1,13 +1,3 @@
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 html {
   p {
     text-align: left;
@@ -297,8 +287,8 @@ div.tags {
     margin: 8px 20px;
     padding: 2px;
     border-radius: 3px;
-    background-color: #e9e9e9;
-    border: 3px solid #e9e9e9;
+    background-color: #fff;
+    border: 3px solid #fff;
 
     &:hover {
       transform: scale(1.05);
@@ -440,6 +430,9 @@ div.tags {
   }
 
   .container {
+    align-items: center;
+    align-content: center;
+
     a {
       width: 90vw;
 
