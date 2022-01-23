@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jorge-e-aquino/jorge-e-aquino.github.io#readme",
   "dependencies": {
+    "sass": "^1.45.1",
     "tilt.js": "^1.2.1"
   }
 }
