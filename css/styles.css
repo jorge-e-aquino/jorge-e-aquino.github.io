@@ -302,7 +302,7 @@ div.tags li#project {
 
 .gold {
   line-height: 1;
-  background: linear-gradient(90deg, #ba943e 0%, #ecac20 20%, #ba943e 39%, #f0b434 50%, #ba943e 60%, #ecac20 80%, #ba943e 100%);
+  background: linear-gradient(90deg, #dfae3b 0%, #ecac20 20%, #daab40 39%, #f0b434 50%, #d8a839 60%, #ecac20 80%, #d8aa40 100%);
   transition: transform 2s ease-in-out;
   border: 3px solid #ecb53e;
   animation: shine 12s infinite;
