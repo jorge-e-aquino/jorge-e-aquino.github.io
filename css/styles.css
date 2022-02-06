@@ -93,7 +93,7 @@ header nav a:hover {
   max-width: 100%;
   opacity: 1;
   transition: 0.2s ease-in-out;
-  margin-top: 1%;
+  margin-top: 30px;
 }
 .container a.project {
   transform: scale(1);
