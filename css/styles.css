@@ -263,7 +263,7 @@ svg:not(:root) {
   transition: 0.2s ease-in-out;
 }
 #link:hover {
-  opacity: 70%;
+  opacity: 40%;
 }
 
 #center p {
